@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog Tech</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <button id="btnTema" class="btn-tema">🌙 Modo Escuro</button>
+    <h1>Meu Blog Tech</h1>
+    <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+  </header>
+
+  <main>
+    <article>
+      <h2>Meu primeiro post</h2>
+      <p><strong>Por:</strong> Marcelo Paludetto</p>
+      <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+      
+      <button id="btnCurtir" class="btn-curtir">
+        ❤️ Curtir (<span id="numCurtidas">0</span>)
+      </button>
+    </article>
+
+    <section class="secao-comentarios">
+      <h3>Deixe um comentário</h3>
+      <form id="formComentario">
+        <input type="text" id="nomeUsuario" placeholder="Seu nome" required>
+        <textarea id="textoComentario" placeholder="Escreva seu comentário aqui..." rows="3" required></textarea>
+        <button type="submit" class="btn-curtir">Enviar Comentário</button>
+      </form>
+
+      <h4>Comentários:</h4>
+      <ul id="listaComentarios" class="lista-comentarios">
+        </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
