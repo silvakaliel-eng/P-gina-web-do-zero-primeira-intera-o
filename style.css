@@ -1,0 +1,106 @@
+/* --- VARIÁVEIS DE CORES (MODO CLARO PADRÃO) --- */
+:root {
+  --bg-body: #f4f4f9;
+  --bg-card: #ffffff;
+  --text-color: #333333;
+  --primary-color: #183C63;
+  --border-color: #cccccc;
+}
+
+/* --- MODO ESCURO --- */
+body.dark-mode {
+  --bg-body: #121212;
+  --bg-card: #1e1e1e;
+  --text-color: #f1f1f1;
+  --primary-color: #3f87a6;
+  --border-color: #444444;
+}
+
+/* --- ESTILOS GERAIS --- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-body);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* --- CABEÇALHO --- */
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.btn-tema {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-tema:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* --- CONTEÚDO PRINCIPAL --- */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+article, .secao-comentarios {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- BOTÃO DE CURTIR E FORMULÁRIO --- */
+.btn-curtir {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-curtir:hover {
+  opacity: 0.9;
+}
+
+/* --- FORMULÁRIO E COMENTÁRIOS --- */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: var(--bg-card);
+  color: var(--text-color);
+}
+
+.lista-comentarios {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-comentarios li {
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 0;
+}
